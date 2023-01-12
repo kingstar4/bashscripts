@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="style.css">
+        <title>RFI</title>
+    </head>
+ <body>
+    
+    <section id="header">
+        <a href="#"><img src="pic/Logo.png" width="30px" alt=""></a>
+        <div>   
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="giving.html">Giving Online</a></li>
+                    <a href="#" id="close"><i class="fas fa-arrow-circle-right"></i></a>
+                </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <section class="acc-Card">
+        <div class="acc-details">
+            <img src="pic/Logo.png" alt="" width="50px">
+            <h3>For offerings and tithe you can make transfers to the account below.</h3>
+            <h2>ZENITH BANK</h2>
+            <h2>ACCOUNT NUMBER: 1220389906</h2>
+            <h2>ACCOUNT NAME: REVIVAL FIRE INVADERS MINISTRIES</h2>
+        </div>
+    </section>
+
+    <section id="footer-section" class="section-p1">    
+        <img src="pic/Logo.png" alt=""width="30px">
+        <div id="social">
+            <h2>Follow Us</h2>
+          <ul>
+            <li><a href="https://m.facebook.com/RfiMinistries"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://instagram.com/revivalfire.invaders"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>    
+        </div>
+        <div id="contact">
+            <h4>Phone: <p>+234 847 309 299</p></h4>
+            <h4>Address: <p> Revival Cathedral at New Iterigbi Road</p></h4>
+        </div>
+    </section>
+
+
+    
+ <script>
+    const bar= document.querySelector('#bar');
+    const navbar= document.getElementById('navbar');
+    const close= document.getElementById('close')
+  
+    if (bar){
+      bar.addEventListener("click", ()=>{
+        navbar.classList.add('active');
+      })
+    }
+    if (close){
+      close.addEventListener("click", ()=>{
+        navbar.classList.remove('active');
+      })
+    }
+</script>
+ </body>
+</html>

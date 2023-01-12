@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>RFI</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="pic/Logo.png" width="30px" alt=""></a>
+        <div>   
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="blog.html">Blog</a></li>
+                    <li><a href="giving.html">Giving Online</a></li>
+                     <a href="#" id="close"><i class="fas fa-arrow-circle-right"></i></a>
+                </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="hero-page" class="grid-container">
+        <div class="blog-hero">
+        </div>
+        <div class="headline">
+            <h2>New</h2>
+            <div class="news-content">
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aperiam. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, est!
+                    </p>
+               </div>
+               <div class="content">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aperiam. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, est!
+                    </p>
+                </div>
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aperiam. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, est!
+                    </p>
+                </div>
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aperiam. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, est!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <div class="sub-title">
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum deserunt voluptate quam odio aliquam in. Enim quis nisi soluta voluptate!</p>
+            <button><h6>View More</h6></button>
+        </div>
+    </section>
+    <section class="main-body">
+        <div class="heading grid-col-span-2">
+            <img src="pic/DSC_1720.jpg" alt="" width="100%">
+            <div class="heading-title">
+                <h2><b>TITLE HEADING</b></h2>
+                <h3>Title description, <span> April 7, 2014</span></h3>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="readMore">
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="small-heading">
+            <img src="pic/Day 3 - 21 Days Fasting Program.jpg" alt="" width="100%">
+            <div class="heading2-title">
+                <h3><b>Prayer and Fasting</b></h3>
+                <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+            </div>
+        </div>
+       
+        <div class="heading grid-col-span-2">
+            <img src="pic/DSC_1854.jpg" alt="" width="100%">
+            <div class="heading-title">
+                <h2><b>TITLE HEADING</b></h2>
+                <h3>Title description, <span> April 7, 2014</span></h3>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="readMore">
+                <button>Read More</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="footer-section" class="section-p1">    
+        <img src="pic/Logo.png" alt=""width="30px">
+        <div id="social">
+            <h2>Follow Us</h2>
+          <ul>
+            <li><a href="https://m.facebook.com/RfiMinistries"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://instagram.com/revivalfire.invaders"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>    
+        </div>
+        <div id="contact">
+            <h4>Phone: <p>+234 847 309 299</p></h4>
+            <h4>Address: <p> Revival Cathedral at New Iterigbi Road</p></h4>
+        </div>
+    </section>
+
+
+<script>
+  const bar= document.querySelector('#bar');
+  const navbar= document.getElementById('navbar');
+  const close= document.getElementById('close')
+
+  if (bar){
+    bar.addEventListener("click", ()=>{
+      navbar.classList.add('active');
+    })
+  }
+  if(close){
+    close.addEventListener("click", ()=>{
+      navbar.classList.remove('active');
+    })
+  }
+</script>
+</body>
+</html>
